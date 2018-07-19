@@ -26,7 +26,11 @@ BeautifulSoup
 - Add support for Simplified and Traditional Chinese
 - You can add distorsion to the generated text
 - You can "fake" handwriting using `-hw`
-
+- 追加了新的图片模式RGBA，可以使用彩色字体
+- 追加了新的背景图片
+- 追加了新的字体
+- 追加了一个例子:Lipi（使用当前工具制作项目中所需的样本图片）
+  使用方法: `python Lipi_training_sample_set.py`
 
 ## How does it work?
 `python run.py -w 5 -f 64`

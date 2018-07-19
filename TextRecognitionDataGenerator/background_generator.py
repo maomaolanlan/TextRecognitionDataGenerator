@@ -56,20 +56,22 @@ class BackgroundGenerator(object):
         return image
 
     @classmethod
-    def picture(cls, height, width):
+    def picture(cls, height, width,  picture_path=None):
         """
             Create a background with a picture
         """
-
-        pictures = os.listdir('./pictures')
-
-        if len(pictures) > 0:
-            picture = Image.open('./pictures/' + pictures[random.randint(0, len(pictures) - 1)])
+        
+        if picture_path==None:
+            pictures = os.listdir('.\\pictures')
+            if len(pictures) > 0:
+                picture_path=os.path.join('.\\pictures', pictures[random.randint(0, len(pictures) - 1)])
+        if picture_path !=None:
+            picture = Image.open(picture_path)
 
             if picture.size[0] < width:
                 picture = picture.resize([width, int(picture.size[1] * (width / picture.size[0]))], Image.ANTIALIAS)
-            elif picture.size[1] < height:
-                picture.thumbnail([int(picture.size[0] * (height / picture.size[1])), height], Image.ANTIALIAS)
+            if picture.size[1] < height:
+                picture=picture.resize([int(picture.size[0] * (height / picture.size[1])), height], Image.ANTIALIAS)
             
             if (picture.size[0] == width):
                 x = 0

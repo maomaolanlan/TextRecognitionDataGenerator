@@ -1,0 +1,340 @@
+"Go Home"
+"Go to office"
+"Help"
+"Listen to the <sources>"
+"Make a new call"
+"Register the current place"
+"连接设置">iPhone界面下进行修改
+#
+*
++
++3
+-
+/
+0
+00.01
+003:28
+0402
+1
+1-800-123-456
+1.Go home
+11.01
+1111-1111-1111
+12345678
+1234567890
+15
+1602
+16027678856
+2
+2.Go to company
+21°C
+2222-2222-2222
+23:42
+27/17°C
+28:28:36
+3
+3.Find the adress in <state>
+31/15°C
+33/16°C
+3333-3333-3333
+34/16°C
+4
+4.Find the nearby <facility name>
+40%
+4444-4444-4444
+5
+5.Find the POI in <city>
+5555-5555-5555
+6
+6.How far to the destination
+7
+8
+9
+9999.9
+9999/9999
+A
+AM
+AM.FM
+AUX
+AUX Audio
+AUX Volume
+Abcde Fghij
+Add Phone
+All
+All Track cannot Play
+Amigo-LSI WriteProgram Ver:XXXX
+Answer Call
+App mode is disabled during privacy
+Apple CarPlay
+Apple CarPlay is connecting!
+Apps
+Audio
+Audio DSP Version Upgrade
+Audio Settings
+Auto Time Adjust
+B
+BAND
+BT Setting
+BT Signal
+Baidu CarLife
+Baidu CarLife is connecting!
+Balance
+Bass
+Bluetooth
+Bluetooth Audio
+Bluetooth device
+Bluetooth device.
+Brightness
+C
+Call
+Call Waiting...
+Camera Type
+Cancel
+Clear
+Clock
+Clock Adjust
+Completed
+Contrast
+Control Settings
+D
+Debug Mode Settings
+Delete Phone
+Device list
+Device name: MY TEANA / TIIDA
+Diagnostic Menu(Panasonic)<*devel*>
+Dial
+Display
+Display Off
+Display Settings
+Do you want to delete this phone
+Do you want to replace this phone
+E
+EQ Pin(EQ1.EQ2.EQ3.EQ4)
+End Call
+Error 1
+Error Code
+F
+FM1
+FRI
+Factory Code Start
+Fade
+File
+File 1
+File 2
+File 3
+File 4
+File 5
+File Name
+Folder
+Folder 1
+Folder 2
+Folder 3
+Folder 4
+Folder 5
+G
+Go Back
+H
+Help
+Home
+I
+If the phone is only charging after connected, the reason might be that
+Ignition
+In Call
+Incoming
+Incoming Call
+J
+Jane Birkin
+K
+KeyBeep
+Keypad
+L
+Light rain
+Lights
+Link
+M
+MHz
+Meter
+Meter and audio
+Missed
+Mon
+N
+Name1
+Name2
+Name3
+Name4
+Name5
+No
+No Bluetooth device connected,
+Number 1
+Number 2
+Number 3
+Number 4
+O
+OFF
+OK
+ON
+On-Screen Clock
+Or long press the Home key to change into the Touch Adjustment
+Outgoing
+P
+Partly cloudy
+Phone
+Phone device name1
+Phone device name2
+Phone device name3
+Phone device name4
+Phone device name5
+Phone name 1
+Phone name 2
+Phone name 3
+Phone name 4
+Phonebook
+Phonebook Download
+Phonebook loading
+Please allow CarLife authorization request on phone to ensure the
+Please confirm the PIN or enter the Password.
+Please confirm the pin matches using the Handset.
+Please disconnect CarLife and try again.
+Please disconnect iPhone and try again.
+Please go to Bluetooth Setting > Add phone to pair
+Please remove a USB flash drive.
+Please say command again
+Please select an item
+Please select from below
+Please use your handset to search vehicle
+Please wait...
+Port Information
+Preset
+Press BACK key.
+Press Home to return Main Menu.
+Q
+Quit
+R
+Radio
+Radio Diagnostic
+Recent Calls
+Reject Call
+Replace Phone
+Reverse
+S
+SCAN
+Search device
+Searching
+Select Phone
+Select phone
+Service Code
+Settings
+Settings Audio
+Settings Bluetooth
+Settings Clock
+Settings Display
+Settings Volume
+Shang Hai
+Show Incoming Calls
+Sound
+Speed Sensitive Volume
+Streaming Audio
+System Diagnostic Menu
+System..>Vehicle Signals
+T
+THU
+TUE
+TUNE
+The PIN is XXXX
+There's no phone available.
+Thermistor Check
+To use this function
+Touch an hold both red points on the screen with one finger.
+Touch an hold both red points on the screen.
+TouchPanel Adjustment is completed.
+Track
+Treble
+U
+USB
+USB/iPod
+Unit Information
+Unknow Album
+Unknow Artist
+Unknow Title
+V
+VOL
+VR
+Vehicle has started running
+Vehicle speed
+Version Information
+Video
+Video view is prohibited
+W
+WED
+Waitting Pair...
+X
+Y
+Yes
+Z
+and its costom phonebook names?
+cable and try again.
+connection is successful
+iPhone Auto-connection setting
+iPhone6
+iPhone6_plus
+iPhone6s
+iPhone7
+iPhone7_plus
+iPod
+item
+kHz
+mode.Press OK button to go back
+the USB cable does not support data transmission. Please change a
+to the home screen.
+·
+不再显示
+不支持数据传输，您可以尝试换根数据线再尝试连接
+中止
+为确保连接成功，请在手机上允许CarLife的授权请求
+允许授权
+击允许CarLife授权
+卓4.0以下的手机
+取消
+否
+在连接手机上弹出的授权申请，请点
+多媒体播放设备 1234567890
+如需修改设置连接，请到"设置">
+如需继续使用，请重新连接并在弹出的授权申请中
+安卓手机
+尝试重启手机再次连接
+帮助
+您使用的手机系统
+您确定要退出CarLife吗？
+所有的曲目无法播放
+手机版本低
+扫描
+文件夹
+是
+是否允许CarLife授权申请？
+是否连接CarLife？
+来电中
+查看如何允许手机上弹出的授权请求
+检查数据线并重新连接
+歌曲
+点击允许CarLife授权
+点击确认
+电话簿传送中，
+百度CarLife授权申请
+确定
+确认手机已安装CarLife
+苹果手机
+记录我的选择
+请稍等...
+请连接手机和车载系统
+请重新连接，如有问题可查看帮助
+读取中...
+连接中...20%
+连接后手机处于充电状态，但无法进行连接，可能你的USB仅支持充电，
+连接失败，手机系统版本过低暂不支持安
+连接帮助
+退出
+通话中
+重新连接
+音量
+预置
+频段

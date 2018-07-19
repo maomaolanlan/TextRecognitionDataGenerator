@@ -16,9 +16,12 @@ class DistorsionGenerator(object):
         if not vertical and not horizontal:
             return image
 
-        rgb_image = image.convert('RGB')
-        
-        img_arr = np.array(rgb_image)
+        img_arr=None
+        if image.mode=='RGBA' or image.mode=='RGB':
+            img_arr = np.array(image)
+        else:
+            rgb_image = image.convert('RGB')
+            img_arr = np.array(rgb_image)
 
         vertical_offsets = [func(i) for i in range(img_arr.shape[1])]
         horizontal_offsets = [
@@ -33,7 +36,7 @@ class DistorsionGenerator(object):
         new_img_arr = np.zeros((
                           img_arr.shape[0] + (2 * max_offset if vertical else 0),
                           img_arr.shape[1] + (2 * max_offset if horizontal else 0),
-                          3
+                          4 if image.mode=='RGBA' else 3
                       ))
 
         new_img_arr_copy = np.copy(new_img_arr)
@@ -51,8 +54,11 @@ class DistorsionGenerator(object):
                     new_img_arr_copy[i, max_offset+o:row_width+max_offset+o,:] = new_img_arr[i, max_offset:row_width+max_offset, :]
                 else:
                     new_img_arr[i, max_offset+o:row_width+max_offset+o,:] = img_arr[i, :, :]
-
-        return Image.fromarray(np.uint8(new_img_arr_copy if horizontal and vertical else new_img_arr)).convert('L')
+        
+        if image.mode=='RGBA' or image.mode=='RGB':
+            return Image.fromarray(np.uint8(new_img_arr_copy if horizontal and vertical else new_img_arr))
+        else:
+            return Image.fromarray(np.uint8(new_img_arr_copy if horizontal and vertical else new_img_arr)).convert('L') 
 
     @classmethod
     def sin(cls, image, vertical=False, horizontal=False, max_offset=10):

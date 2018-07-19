@@ -1,10 +1,8 @@
 import os
-import cv2
 import random
-
 from PIL import Image, ImageFilter
-
 from computer_text_generator import ComputerTextGenerator
+
 try:
     from handwritten_text_generator import HandwrittenTextGenerator
 except ImportError as e:
@@ -14,7 +12,10 @@ from distorsion_generator import DistorsionGenerator
 
 class FakeTextDataGenerator(object):
     @classmethod
-    def generate(cls, index, text, font, out_dir, height, extension, skewing_angle, random_skew, blur, random_blur, background_type, distorsion_type, distorsion_orientation, is_handwritten, name_format, text_color=-1):
+    def generate(cls, index, text, font, out_dir, height, extension,\
+                 skewing_angle, random_skew, blur, random_blur, background_type,\
+                 distorsion_type, distorsion_orientation, is_handwritten,\
+                 name_format, text_color=-1,text_mode='L',background_path=None):
         image = None
 
         ##########################
@@ -23,7 +24,7 @@ class FakeTextDataGenerator(object):
         if is_handwritten:
             image = HandwrittenTextGenerator.generate(text)
         else:
-            image = ComputerTextGenerator.generate(text, font, text_color)
+            image = ComputerTextGenerator.generate(text, font, text_color,mode=text_mode)
 
         random_angle = random.randint(0-skewing_angle, skewing_angle)
 
@@ -65,10 +66,18 @@ class FakeTextDataGenerator(object):
         elif background_type == 2:
             background = BackgroundGenerator.quasicrystal(new_text_height + 10, new_text_width + 10)
         else:
-            background = BackgroundGenerator.picture(new_text_height + 10, new_text_width + 10)
-
-        mask = distorted_img.point(lambda x: 0 if x == 255 or x == 0 else 255, '1')
-
+            background = BackgroundGenerator.picture(new_text_height + 10, new_text_width + 10, background_path)
+        mask=None
+        if text_mode == 'L':
+            mask = distorted_img.point(lambda x: 0 if x == 255 or x == 0 else 255, '1')
+        elif text_mode == '1':
+            mask = distorted_img.point(lambda x: 0 if x == 0 else 255, '1')
+        elif text_mode == 'RGBA':
+             _, _, _, alpha = distorted_img.split()
+             mask=alpha
+        else:
+            raise Exception('img mode error!(sorry, RGB is not support!)')
+        
         background.paste(distorted_img, (5, 5), mask=mask)
 
         ##################################
